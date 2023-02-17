@@ -1,0 +1,44 @@
+GDB中的调试参数，只在当前GDB有用，下次再开GDB参数消失
+PS：回车，代表重复上一次指令
+启动gdb：
+	gdb ./a.out 或者 进入gdb后，使用file ./a.out加载可执行文件
+基本命令：
+	shell clear(ctrl+l) gdb内使用shell的clear进行清屏
+	help(h) 查看命令帮助
+	run(r) 运行二进制文件
+	continue(c) 继续执行，直到执行到下一个断点
+		【依据程序的执行顺序，当遇到断点时停止；如果断点在while内，则会多次停止】
+	start 停在第一行可执行语句
+	list(l) 查看源代码，默认为当前位置查看
+		l n 查看第n行附近的代码
+		l 函数名 查看具体函数名内部内容
+	set 设置变量值
+	print(p) 打印值及地址【一次打印】
+		p printf("Hello World") 执行内容后，打印返回值
+		p N=50 调试过程中可以修改数值
+	next(n) 单步调试，不能进函数
+	step(s) 单步调试，可以进函数
+	backtrace(bt) 查看函数调用的栈帧和层次关系【只对除main外函数有意义】
+	frame(f) 切换函数的栈帧
+	info(i) 查看函数局部变量的数值
+	delete 删除断点
+	finish 结束当前函数，返回函数调用点【只对除main外函数有意义】
+	quit(q) 退出gdb
+
+组合指令：
+	b n 设置断点
+	i b 查看断点信息
+	d n 删除信息中的断点，依据为断点号
+	display 追踪具体变量【持续打印】
+	undisplay 取消追踪变量
+	watch 设置观察点，当数据变化时打印
+	i watch 显示观察点
+	enable breakpoints 启用断点
+	disable breakpoints 禁用断点
+	x 查看内存
+	r a1 a2 调试时可以输入main的参数
+	set follow-fork-mode child Makefile项目管理：选择跟踪父子进程(fork())
+	
+	
+	
+	

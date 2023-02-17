@@ -1,0 +1,31 @@
+指令：opt + [选项] +[操作目标]
+基础指令：
+	pwd【Print current working directory】，打印当前目录
+	ls【list directory contents】，列出目录下文件和文件夹
+		-l 列表形式打印文件状态
+		-a 包含隐藏文件的打印
+		-h 将打印数据便于人类观察
+	cd【change directory】，切换目录
+		cd 回车/cd ~ ，直接回到家目录下
+	mkdir【make directories】，创建文件夹
+		-p 创建多级目录 eg:mkdir -p a/b/c/d
+		mkdir a b c 一个目录下同时创建 a b c 三个文件夹
+	touch【change file timestamps】，创建文件
+	rm【remove files or directories】，删除文件、目录
+		-r 递归删除文件，适用于删除文件夹 eg: rm -r a
+		-f 强制删除文件
+	cp【copy files and directories】，复制文件、文件夹
+		-r 递归的复制文件【cp实际就是将需要复制的文件打包】
+	mv【move(rename)files】，移动文件/重命名文件
+		无论是文件、文件夹都可以直接移动
+	man【an interface to the system reference manuals】手册
+		man ls,man cd,man man
+	help 查找指令使用
+	reboot 重启
+	shutdown 关机 shutdown -h now
+
+进阶：
+	time 程序运行时间计算
+		eg: time ./a.out
+	ldd 查询可执行文件的动态库依赖关系
+		ldd ./a.out
