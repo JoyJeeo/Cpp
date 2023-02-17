@@ -1,2 +1,2 @@
 # Basic-linux-VSCode-Gpp-CMake-Git-Projects
-VSCode课程七讲+基础大杂烩
+VSCode课程七讲+camke+g+++gdb+git
