@@ -18,6 +18,8 @@
 		-r 递归的复制文件【cp实际就是将需要复制的文件打包】
 	mv【move(rename)files】，移动文件/重命名文件
 		无论是文件、文件夹都可以直接移动
+	tree 查看文件结构
+		-a 查看所有文件结构，包含隐藏文件
 	man【an interface to the system reference manuals】手册
 		man ls,man cd,man man
 	help 查找指令使用
