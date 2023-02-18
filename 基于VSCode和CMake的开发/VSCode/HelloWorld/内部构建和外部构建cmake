@@ -1,0 +1,2 @@
+	cmake + CMakeLists.txt的具体文件位置，cmake编译camkelists中的指令后，在cmake所在目录下，生成cmake指令文件，makefile生成在该目录下，直接make操作就可以执行makefile中的代码生成可执行文件
+	因此，cmake使用指令时所在的文件位置就很重要，一般会默认建立build文件作为cmake使用指令生成文件的文件夹

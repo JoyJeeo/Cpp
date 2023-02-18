@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "g++ - 生成和调试活动文件",
+            "type": "cppdbg",
+            "request": "launch",
+            // 可执行文件的绝对路径位置
+            // ${workspaceFolder}代表执行项目顶目录地址
+            // ！！！程序执行前会先进入这个文件后再处理其他的任务
+            "program": "${workspaceFolder}/build/cmake_main",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode":"gdb",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": ".enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            // "preLaunchTask": "C/C++: g++ build active file",
+            // 如果没有开启提前编译的话，修改文件后，文件就不会重新编译，运行的就是之前的.out文件
+            // 调试时就会出现错行等奇怪的现象
+            "preLaunchTask": "Build", // 在执行launch前执行task里的这个任务
+            // VSCode默认调用系统的调试器
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+        
+
+    ]
+}

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Gun.h
+bits/stdc++.h
+-
+
+../include/Solider.h
+Gun.h
+../include/Gun.h
+
+/home/zyt/Desktop/Cpp/基于VSCode和CMake的开发/项目：士兵突击/main.cpp
+Solider.h
+/home/zyt/Desktop/Cpp/基于VSCode和CMake的开发/项目：士兵突击/Solider.h
+
+/home/zyt/Desktop/Cpp/基于VSCode和CMake的开发/项目：士兵突击/src/Gun.cpp
+Gun.h
+/home/zyt/Desktop/Cpp/基于VSCode和CMake的开发/项目：士兵突击/src/Gun.h
+
+/home/zyt/Desktop/Cpp/基于VSCode和CMake的开发/项目：士兵突击/src/Solider.cpp
+Solider.h
+/home/zyt/Desktop/Cpp/基于VSCode和CMake的开发/项目：士兵突击/src/Solider.h
+

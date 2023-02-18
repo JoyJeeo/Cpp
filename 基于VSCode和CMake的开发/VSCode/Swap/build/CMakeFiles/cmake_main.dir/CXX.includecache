@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+.././include/Swap.h
+iostream
+-
+
+/home/zyt/Desktop/Cpp/基于VSCode和CMake的开发/VSCode/Swap/main.cpp
+Swap.h
+/home/zyt/Desktop/Cpp/基于VSCode和CMake的开发/VSCode/Swap/Swap.h
+
+/home/zyt/Desktop/Cpp/基于VSCode和CMake的开发/VSCode/Swap/src/Swap.cpp
+Swap.h
+/home/zyt/Desktop/Cpp/基于VSCode和CMake的开发/VSCode/Swap/src/Swap.h
+

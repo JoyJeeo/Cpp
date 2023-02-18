@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zyt/Desktop/Cpp/基于VSCode和CMake的开发/VSCode/HelloWorld/cmake外部编译/hello.cpp
+iostream
+-
+

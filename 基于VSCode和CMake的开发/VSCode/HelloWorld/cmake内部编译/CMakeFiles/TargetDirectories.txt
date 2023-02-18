@@ -1,0 +1,3 @@
+/home/zyt/Desktop/Cpp/基于VSCode和CMake的开发/VSCode/HelloWorld/cmake内部编译/CMakeFiles/rebuild_cache.dir
+/home/zyt/Desktop/Cpp/基于VSCode和CMake的开发/VSCode/HelloWorld/cmake内部编译/CMakeFiles/edit_cache.dir
+/home/zyt/Desktop/Cpp/基于VSCode和CMake的开发/VSCode/HelloWorld/cmake内部编译/CMakeFiles/helloworld_cmake.dir
